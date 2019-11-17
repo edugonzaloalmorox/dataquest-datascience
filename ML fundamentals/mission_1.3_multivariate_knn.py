@@ -61,7 +61,7 @@ predictions = knn.predict(test_df[train_columns])
 
 features = ['accommodates', 'bedrooms', 'bathrooms', 'number_of_reviews']
 from sklearn.neighbors import KNeighborsRegressor
-knn = KNeighborsRegressor(n_neighbors=5, algorithm='brute')
+knn = KNeighborsRegressor©(n_neighbors=5, algorithm='brute')
 
 knn.fit(train_df[features], train_df['price'])
 
