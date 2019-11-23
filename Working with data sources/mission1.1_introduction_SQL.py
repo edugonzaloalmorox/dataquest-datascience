@@ -1,7 +1,6 @@
  # Previewing a table using select
 
- select * from recent_grads limit 10
-
+select * from recent_grads limit 10
 
 
 # Filtering Rows using WHERE 
