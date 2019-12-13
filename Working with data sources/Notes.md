@@ -62,7 +62,7 @@
 
 - `CAST()` is used when we divide two integer columns and we want to keep the decimal - otherwise it returns an integer number. This is called 
 **`casting`** 
- 
+
 
 
 
