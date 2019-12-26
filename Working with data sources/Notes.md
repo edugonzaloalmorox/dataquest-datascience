@@ -1,7 +1,7 @@
 # Introduction to Databases
 
 
--Working with `.csv` files is important when. 
+- Working with `.csv` files is important when. 
 
         - Data fits in memory.
 
@@ -11,19 +11,19 @@
 
         - Security is not too important
 
--Otherwise, it is more convenient to work with data store in database.
+- Otherwise, it is more convenient to work with data store in database.
 
--A database is a data representation that lives in a disk and can be queried, accessed and updated without using much memory. 
+- A database is a data representation that lives in a disk and can be queried, accessed and updated without using much memory. 
 
--`SQL` is used to work with data stored in database. Each unique request is considered a single query.
+- `SQL` is used to work with data stored in database. Each unique request is considered a single query.
 
-- `Microsoft Azure` and `AWS` are setups in the cloud.
+-  `Microsoft Azure` and `AWS` are setups in the cloud.
 
-- `Postgres`  and `MySQL` include powerful features for managing user credentials, security, and high data throughput (quickly changing data).
+-  `Postgres`  and `MySQL` include powerful features for managing user credentials, security, and high data throughput (quickly changing data).
 
 ## Main query functions
 
--`select`: select columns 
+- `select`: select columns 
 
 - `where`: filtering columns
 
@@ -62,6 +62,18 @@
 
 - `CAST()` is used when we divide two integer columns and we want to keep the decimal - otherwise it returns an integer number. This is called 
 **`casting`** 
+
+
+## Subqueries
+
+- SQL is a declarative language programming. 
+
+- Subqueries subquery is a query nested within another query. It is hosted in a `where` clause.
+
+- Using the `IN` operator, we can specify a list of values that we want to match against in the `WHERE` clause.
+
+
+
 
 
 
