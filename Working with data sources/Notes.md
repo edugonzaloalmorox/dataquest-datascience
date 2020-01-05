@@ -73,10 +73,50 @@
 - Using the `IN` operator, we can specify a list of values that we want to match against in the `WHERE` clause.
 
 
+Connect to a database (e.g. `jobs.db`)
 
 
+`import sqlite3`
+
+`conn = sqlite3.connect('jobs.db')`
+
+Cursor class is used to: 
 
 
+- Run a query against the database
+- Parse the results from the database
+- Convert the results to native Python objects
+- Store the results within the Cursor instance as a local variable
+
+To return a cursor instance corresponding to a database:
+
+`cursor = conn.cursor()`
+
+`Tuple`: number of values separated by commas. This is similar to a list but they are immutable and faster than lists. They are more suitable for big datasets.
+
+
+`# SQL Query as a string`
+`query = "select * from recent_grads;"`
+
+`# Execute the query, convert the results to tuples, and store as a local variable`
+`cursor.execute(query)`
+
+`# Fetch the full results set as a list of tuples`
+`results = cursor.fetchall()`
+
+`# Display the first three results`
+`print(results[0:3])`
+
+
+The SQLite library actually allows us to skip creating a Cursor altogether by using the `execute` method within the Connection object itself
+
+`conn = sqlite3.connect("jobs.db")`
+`query = "select * from recent_gr`
+
+- `fetchone()`: cursor method to return a single result
+- `fetchmany()`: cursor method to return `n()` results.
+
+To close a connection we have to use the Connection instance method `close()`
 
 
 
