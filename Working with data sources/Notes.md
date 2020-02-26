@@ -139,7 +139,7 @@ INNER JOIN [table_name_two] ON [join_constraint];`
 
 Joins are normally used in a query **after the from clause**. 
 
-
+We can also combine aliases with wildcards - for instance, using the aliases created above, `c.*` would give us all columns from the table `cities`
 
 
 
