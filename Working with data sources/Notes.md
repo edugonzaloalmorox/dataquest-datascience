@@ -1,4 +1,6 @@
-# Introduction to Databases
+# SQL foundations
+
+## Introduction to Databases
 
 
 - Working with `.csv` files is important when. 
@@ -117,6 +119,28 @@ The SQLite library actually allows us to skip creating a Cursor altogether by us
 - `fetchmany()`: cursor method to return `n()` results.
 
 To close a connection we have to use the Connection instance method `close()`
+
+
+# SQL Intermediate: Table relations and joins
+
+## Joining data in SQL 
+
+### Introduction to joins 
+
+Data are in more than one table so normally data from multiple tables have to be combined within a single query.
+
+
+`SELECT [column_names] FROM [table_name_one]
+INNER JOIN [table_name_two] ON [join_constraint];`
+
+`inner join`: tells the SQL engine the name of the table you wish to join in your query, and that you wish to use an inner join.
+
+`on`: which tells the SQL engine what columns to use to join the two tables.
+
+Joins are normally used in a query **after the from clause**. 
+
+
+
 
 
 
